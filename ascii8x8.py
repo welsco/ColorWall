@@ -16,9 +16,9 @@ def draw_chr(ch, wall, foreground, background, x_offset=0, y_offset=0):
     for y, row in enumerate(font):
         for x, col in enumerate(row):
             if col == '#':
-                wall.set_pixel(y + y_offset, x + x_offset, background)
+                wall.set_pixel(x + x_offset, y + y_offset, background)
             else:
-                wall.set_pixel(y + y_offset, x + x_offset, foreground)
+                wall.set_pixel(x + x_offset,y + y_offset,  foreground)
 
 Font8x8 = (
   (
